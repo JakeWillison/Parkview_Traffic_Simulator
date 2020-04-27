@@ -839,7 +839,7 @@ PrefabInstance:
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 27
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
@@ -956,11 +956,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1015,6 +1010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -1615,16 +1615,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1679,6 +1669,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -2563,7 +2563,7 @@ PrefabInstance:
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 17
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
@@ -2715,6 +2715,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c1246f31bc988f948b6c52130d6c1831, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a2e895ccfc74f4aad14aca045e8cd4, type: 3}
+--- !u!4 &360348987 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+    type: 3}
+  m_PrefabInstance: {fileID: 2061558636204718982}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &366305801
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2722,16 +2728,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2786,6 +2782,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -3779,16 +3785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Van
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3843,6 +3839,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Van
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296729, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -4691,16 +4697,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Van (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4755,6 +4751,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Van (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296729, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -5093,16 +5099,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5157,6 +5153,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -5521,21 +5527,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5590,6 +5581,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -6130,7 +6136,7 @@ PrefabInstance:
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
@@ -6356,16 +6362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Van (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6404,7 +6400,7 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -6420,6 +6416,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Van (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296729, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -7120,6 +7126,8 @@ MonoBehaviour:
   - {fileID: 64149946}
   - {fileID: 1790567310}
   curLightRed: 1
+  nearambulance: []
+  ambpriority: []
 --- !u!65 &959362780
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7187,6 +7195,8 @@ MonoBehaviour:
   lightsNbr1: []
   lightsNbr2: []
   curLightRed: 1
+  nearambulance: []
+  ambpriority: []
 --- !u!65 &961763514
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7713,11 +7723,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7772,6 +7777,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -8062,16 +8072,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Van (8)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8110,7 +8110,7 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 18
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -8126,6 +8126,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Van (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296729, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -8561,7 +8571,7 @@ PrefabInstance:
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 26
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
@@ -9075,7 +9085,7 @@ PrefabInstance:
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
       propertyPath: m_RootOrder
-      value: 24
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 1809614700398524462, guid: 5aa21f57b5d12c84794c4a413fa73cce,
         type: 3}
@@ -9161,16 +9171,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Van (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9225,6 +9225,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Van (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296729, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
@@ -11141,16 +11151,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11189,7 +11189,7 @@ PrefabInstance:
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -11205,6 +11205,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -11288,11 +11298,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11347,6 +11352,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -11566,6 +11576,7 @@ Transform:
   - {fileID: 197852362}
   - {fileID: 1528813039}
   - {fileID: 109070185}
+  - {fileID: 360348987}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11663,6 +11674,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -11885,16 +11897,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11949,6 +11951,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -12108,11 +12120,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12167,6 +12174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -13742,16 +13754,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13806,6 +13808,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -14407,16 +14419,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14471,6 +14473,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -14857,16 +14869,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14905,7 +14907,7 @@ PrefabInstance:
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -14921,6 +14923,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -15653,6 +15665,8 @@ MonoBehaviour:
   - {fileID: 1793924801}
   - {fileID: 1922008687}
   curLightRed: 1
+  nearambulance: []
+  ambpriority: []
 --- !u!65 &2140340789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15666,3 +15680,77 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 7.4062824, y: 2.1000223, z: 7.2678423}
   m_Center: {x: -0.3028021, y: 0.5500113, z: -0.03893137}
+--- !u!1001 &2061558636204718982
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1391736470}
+    m_Modifications:
+    - target: {fileID: 2061558636024727228, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_Name
+      value: Ambulance
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727226, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: fbef286ae7fa2254c997235a39e12c84, type: 3}

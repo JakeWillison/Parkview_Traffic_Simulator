@@ -5,10 +5,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TrafficSimulation{
-    public enum IntersectionType{
+namespace TrafficSimulation
+{
+    public enum IntersectionType
+    {
         STOP,
-        TRAFFIC_LIGHT
+        TRAFFIC_LIGHT,
+        AMBULANCE_STOP
     }
 
     public class Intersection : MonoBehaviour
@@ -26,42 +29,56 @@ namespace TrafficSimulation{
         public List<Segment> lightsNbr1;
         public List<Segment> lightsNbr2;
 
-   
+
         List<GameObject> vehiclesQueue;
         [HideInInspector]
         public int curLightRed = 1;
 
-        void Start(){
+        //For ambulance only
+        public List<GameObject> nearambulance;
+        public List<Segment> ambpriority;
+
+        void Start()
+        {
             vehiclesQueue = new List<GameObject>();
             vehiclesInIntersection = new List<GameObject>();
-            if(intersectionType == IntersectionType.TRAFFIC_LIGHT)
+            nearambulance = new List<GameObject>();
+            if (intersectionType == IntersectionType.TRAFFIC_LIGHT)
                 InvokeRepeating("SwitchLights", lightsDuration, lightsDuration);
         }
 
-        void SwitchLights(){
+        void SwitchLights()
+        {
 
-            if(curLightRed == 1) curLightRed = 2;
-            else if(curLightRed == 2) curLightRed = 1;            
-            
+            if (curLightRed == 1) curLightRed = 2;
+            else if (curLightRed == 2) curLightRed = 1;
+
             //Wait few seconds after light transition before making the other car move (= orange light)
             Invoke("MoveVehiclesQueue", orangeLightDuration);
         }
 
-        void OnTriggerEnter(Collider other) {
-            if(other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.STOP)
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.STOP)
                 TriggerStop(other.gameObject);
-            else if(other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.TRAFFIC_LIGHT)
+            else if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.TRAFFIC_LIGHT)
                 TriggerLight(other.gameObject);
+            else if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.AMBULANCE_STOP)
+                TriggerAmbulanceStop(other.gameObject);
         }
 
-        void OnTriggerExit(Collider other) {
-            if(other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.STOP)
+        void OnTriggerExit(Collider other)
+        {
+            if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.STOP)
                 ExitStop(other.gameObject);
-            else if(other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.TRAFFIC_LIGHT)
+            else if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.TRAFFIC_LIGHT)
                 ExitLight(other.gameObject);
+            else if (other.tag == "AutonomousVehicle" && intersectionType == IntersectionType.AMBULANCE_STOP)
+                ExitAmbulanceStop(other.gameObject);
         }
 
-        void TriggerStop(GameObject vehicle){
+        void TriggerStop(GameObject vehicle)
+        {
             //Check if there are other cars in the queue
             //if that's the case, stop the vehicle
 
@@ -71,22 +88,27 @@ namespace TrafficSimulation{
             // vehiclesQueue.Add(vehicle);
 
             CarAI carAI = vehicle.GetComponent<CarAI>();
-            if(!IsOnPrioritySegment(carAI)){
-                if(vehiclesQueue.Count > 0 || vehiclesInIntersection.Count > 0){
+            if (!IsOnPrioritySegment(carAI))
+            {
+                if (vehiclesQueue.Count > 0 || vehiclesInIntersection.Count > 0)
+                {
                     carAI.hasToStop = true;
                     vehiclesQueue.Add(vehicle);
                 }
-                else{
+                else
+                {
                     vehiclesInIntersection.Add(vehicle);
                     carAI.hasToGo = true;
                 }
             }
-            else{
-                    vehiclesInIntersection.Add(vehicle);
+            else
+            {
+                vehiclesInIntersection.Add(vehicle);
             }
         }
 
-        void ExitStop(GameObject vehicle){
+        void ExitStop(GameObject vehicle)
+        {
             // if(vehiclesQueue.Count == 0)
             //     return;
 
@@ -104,49 +126,100 @@ namespace TrafficSimulation{
             vehiclesInIntersection.Remove(vehicle);
             vehiclesQueue.Remove(vehicle);
 
-            if(vehiclesQueue.Count > 0 && vehiclesInIntersection.Count == 0){
+            if (vehiclesQueue.Count > 0 && vehiclesInIntersection.Count == 0)
+            {
                 vehiclesQueue[0].GetComponent<CarAI>().hasToStop = false;
                 vehiclesQueue[0].GetComponent<CarAI>().hasToGo = true;
             }
         }
 
-        void TriggerLight(GameObject vehicle){
+        void TriggerAmbulanceStop(GameObject vehicle)
+        {
+            //vehicle.GetComponent<CarAI>().hasToStop = true;
+            //vehicle.GetComponent<CarAI>().hasToGo = false;
+
+            CarAI carAI = vehicle.GetComponent<CarAI>();
+            if (!IsOnPrioritySegment(carAI))
+            {
+                if (vehiclesQueue.Count >= 0 || vehiclesInIntersection.Count >= 0)
+                {
+                    carAI.hasToStop = true;
+                    vehiclesQueue.Add(vehicle);
+                }
+                else
+                {
+                    vehiclesInIntersection.Add(vehicle);
+                    carAI.hasToGo = true;
+                }
+            }
+            else
+            {
+                vehiclesInIntersection.Add(vehicle);
+            }
+        }
+
+        void ExitAmbulanceStop(GameObject vehicle)
+        {
+            vehicle.GetComponent<CarAI>().hasToGo = false;
+            vehiclesInIntersection.Remove(vehicle);
+            vehiclesQueue.Remove(vehicle);
+
+            if (vehiclesQueue.Count >= 0 && vehiclesInIntersection.Count == 0)
+            {
+                vehiclesQueue[0].GetComponent<CarAI>().hasToStop = false;
+                vehiclesQueue[0].GetComponent<CarAI>().hasToGo = true;
+            }
+        }
+
+        void TriggerLight(GameObject vehicle)
+        {
             int vehicleSegment = vehicle.GetComponent<CarAI>().curSeg;
-            if(IsRedLightSegment(vehicleSegment)){
+            if (IsRedLightSegment(vehicleSegment))
+            {
                 vehicle.GetComponent<CarAI>().hasToStop = true;
                 vehiclesQueue.Add(vehicle);
             }
-            else{
+            else
+            {
                 vehicle.GetComponent<CarAI>().hasToGo = true;
             }
         }
 
-        void ExitLight(GameObject vehicle){
+        void ExitLight(GameObject vehicle)
+        {
             vehicle.GetComponent<CarAI>().hasToStop = false;
             vehicle.GetComponent<CarAI>().hasToGo = false;
         }
 
-        bool IsRedLightSegment(int vehicleSegment){
-            if(curLightRed == 1){
-                foreach(Segment segment in lightsNbr1){
-                    if(segment.id == vehicleSegment)
+        bool IsRedLightSegment(int vehicleSegment)
+        {
+            if (curLightRed == 1)
+            {
+                foreach (Segment segment in lightsNbr1)
+                {
+                    if (segment.id == vehicleSegment)
                         return true;
                 }
             }
-            else{
-                foreach(Segment segment in lightsNbr2){
-                    if(segment.id == vehicleSegment)
+            else
+            {
+                foreach (Segment segment in lightsNbr2)
+                {
+                    if (segment.id == vehicleSegment)
                         return true;
                 }
             }
             return false;
         }
 
-        void MoveVehiclesQueue(){
+        void MoveVehiclesQueue()
+        {
             //Move all vehicles in queue
             List<GameObject> nVehiclesQueue = new List<GameObject>(vehiclesQueue);
-            foreach(GameObject vehicle in vehiclesQueue){
-                if(!IsRedLightSegment(vehicle.GetComponent<CarAI>().curSeg)){
+            foreach (GameObject vehicle in vehiclesQueue)
+            {
+                if (!IsRedLightSegment(vehicle.GetComponent<CarAI>().curSeg))
+                {
                     vehicle.GetComponent<CarAI>().hasToStop = false;
                     vehicle.GetComponent<CarAI>().hasToGo = true;
                     nVehiclesQueue.Remove(vehicle);
@@ -155,9 +228,11 @@ namespace TrafficSimulation{
             vehiclesQueue = nVehiclesQueue;
         }
 
-        bool IsOnPrioritySegment(CarAI carAI){
-            foreach(Segment nsSeg in prioritySegments){
-                if(carAI.curSeg == nsSeg.id)
+        bool IsOnPrioritySegment(CarAI carAI)
+        {
+            foreach (Segment nsSeg in prioritySegments)
+            {
+                if (carAI.curSeg == nsSeg.id)
                     return true;
             }
             return false;
