@@ -12,6 +12,19 @@ namespace TrafficSimulation{
         [HideInInspector]
         public Segment segment;
 
+        //int i = 0;
+        //public GameObject vehicle;
+        //public GameObject waypoint;
+        //void Update()
+        //{
+
+        //    if (Time.time > i)
+        //    {
+        //        i += 5;
+        //        Instantiate(vehicle, waypoint.transform);
+        //    }
+        //}
+
         void OnDrawGizmos(){
             //Draw sphere, increase color to show the direction
             Gizmos.color = new Color(0f, 0f, 1f, (id + 1) / (float) segment.waypoints.Count);
