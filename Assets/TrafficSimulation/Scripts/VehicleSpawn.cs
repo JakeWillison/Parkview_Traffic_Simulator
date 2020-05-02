@@ -5,6 +5,7 @@ using UnityEngine;
 public class VehicleSpawn : MonoBehaviour
 {
     int i = 0;
+    public int SpawnTimer;
     public GameObject vehicle;
     public GameObject waypoint;
     public float spawnDirection;
@@ -20,7 +21,7 @@ public class VehicleSpawn : MonoBehaviour
 
         if (Time.time > i)
         {
-            i += 8;
+            i += SpawnTimer;
             GameObject.Instantiate(vehicle, waypoint.transform.position, Quaternion.Euler(0f, spawnDirection, 0f));
         }
     }
