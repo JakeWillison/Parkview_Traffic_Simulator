@@ -15695,7 +15695,7 @@ PrefabInstance:
     - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.54
+      value: 2.92
       objectReference: {fileID: 0}
     - target: {fileID: 2061558636024727229, guid: fbef286ae7fa2254c997235a39e12c84,
         type: 3}
@@ -15752,10 +15752,51 @@ PrefabInstance:
       propertyPath: trafficSystem
       value: 
       objectReference: {fileID: 676069672}
+    - target: {fileID: 2061558636024727226, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: hasToGo
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2061558636024727224, guid: fbef286ae7fa2254c997235a39e12c84,
         type: 3}
       propertyPath: m_Drag
       value: 0.1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2061558636024727224, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636024727227, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: TractionControl
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558637160620716, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558637277210870, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636191437260, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558637065091205, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2061558636295403863, guid: fbef286ae7fa2254c997235a39e12c84,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0.1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 1304085906, guid: fbef286ae7fa2254c997235a39e12c84, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fbef286ae7fa2254c997235a39e12c84, type: 3}
