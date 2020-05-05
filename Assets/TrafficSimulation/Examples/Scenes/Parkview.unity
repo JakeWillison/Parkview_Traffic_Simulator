@@ -96,7 +96,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: 454eb5b1eeb7f3148ba68c92cf000896,
     type: 2}
   m_UseShadowmask: 1
@@ -355,9 +354,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37837769}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -1054,11 +1052,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1113,6 +1106,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (9)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -1758,61 +1756,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1867,6 +1810,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -2882,61 +2880,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2991,6 +2934,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -3989,11 +3987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4047,6 +4040,11 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
@@ -4918,11 +4916,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4976,6 +4969,11 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
@@ -5448,61 +5446,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5557,6 +5500,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -5876,9 +5874,75 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 950268278, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.589
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -19.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
       propertyPath: m_Layer
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
       objectReference: {fileID: 0}
     - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
       propertyPath: waypointSystem
@@ -5919,6 +5983,43 @@ PrefabInstance:
     - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
       propertyPath: raysNumber
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
+        type: 2}
+    - target: {fileID: 3312457259521580217, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259521580615, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
+        type: 2}
+    - target: {fileID: 3312457259521755373, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
+        type: 2}
+    - target: {fileID: 950268278, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259515118167, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -5985,114 +6086,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515349719, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -5.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.589
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -19.79
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_CollisionDetection
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259521545865, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
-        type: 2}
-    - target: {fileID: 3312457259521580217, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259521580615, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
-        type: 2}
-    - target: {fileID: 3312457259521755373, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: d8968e448bcd4394fb489e3ada568800,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
 --- !u!1 &742506966
@@ -6756,11 +6754,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6814,6 +6807,11 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
@@ -7235,9 +7233,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895422720}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.8099256, b: 0.5882353, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -8174,11 +8171,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8233,6 +8225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -8568,11 +8565,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8626,6 +8618,11 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
@@ -9185,9 +9182,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1124711761}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -9668,11 +9664,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9726,6 +9717,11 @@ PrefabInstance:
     - target: {fileID: 7118174905381296724, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5963189199863415441, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7118174905381296725, guid: 7524d07406fe4e844a7b65bbcbe13d8f,
@@ -11764,61 +11760,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11874,6 +11815,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
+      objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_CollisionDetection
@@ -11911,11 +11907,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11970,6 +11961,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -12085,9 +12081,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1388775058}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -12373,8 +12368,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1425557426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.23, y: 0, z: 13.7}
-  m_LocalScale: {x: 95.554474, y: 2.8443134, z: 173.16733}
+  m_LocalPosition: {x: 2.71, y: -0, z: 10.72}
+  m_LocalScale: {x: 87.91012, y: 2.8443134, z: 148.12733}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
@@ -12555,61 +12550,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12664,6 +12604,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -12778,11 +12773,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12837,6 +12827,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (8)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -13196,9 +13191,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581081303}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -13737,9 +13731,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1665785274}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -13797,11 +13790,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 996939397}
     m_Modifications:
-    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
-        type: 3}
-      propertyPath: m_Name
-      value: StopSign (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 7461923201326877413, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13856,6 +13844,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7461923201326877412, guid: fe8814239ba75e74a9eaed53bbe7cb6f,
+        type: 3}
+      propertyPath: m_Name
+      value: StopSign (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fe8814239ba75e74a9eaed53bbe7cb6f, type: 3}
@@ -14505,61 +14498,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14614,6 +14552,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -14957,9 +14950,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1883249840}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 2
-  m_Shape: 0
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 10
   m_Range: 5
@@ -15238,61 +15230,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15347,6 +15284,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
@@ -15689,61 +15681,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1391736470}
     m_Modifications:
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: startingSegment
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: waypointThresh
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raycastLength
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: trafficSystem
-      value: 
-      objectReference: {fileID: 676069672}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: maxTopSpeed
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: rayNumber
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raySpacing
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: numberRaysOnEachSide
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
-      propertyPath: raysNumber
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: FullTorqueOverAllWheels
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_Name
-      value: Car Coupe (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
-        type: 3}
-      propertyPath: m_TagString
-      value: AutonomousVehicle
-      objectReference: {fileID: 0}
     - target: {fileID: 3312457259515600645, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15798,6 +15735,61 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_Name
+      value: Car Coupe (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347895, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: m_TagString
+      value: AutonomousVehicle
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: startingSegment
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: waypointThresh
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raycastLength
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: trafficSystem
+      value: 
+      objectReference: {fileID: 676069672}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: maxTopSpeed
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: rayNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raySpacing
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: numberRaysOnEachSide
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1824578128, guid: e2ace7e47b1bdf64e8164df9c3047935, type: 3}
+      propertyPath: raysNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3312457259515347888, guid: e2ace7e47b1bdf64e8164df9c3047935,
+        type: 3}
+      propertyPath: FullTorqueOverAllWheels
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3312457259518432589, guid: e2ace7e47b1bdf64e8164df9c3047935,
         type: 3}
